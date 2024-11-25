@@ -1,0 +1,38 @@
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+	padding: 5px;
+}
+
+#home{
+	height: 850px;
+}
+.headings{
+	font-size: 1.7rem;
+}
+#pic img{
+	width: 100px;
+	height: 150px;
+}
+#intro h2{
+	font-size: 1.5rem;
+}
+
+.gallery img{
+	width: 200px;
+	height: 150px;
+	margin: 10px;
+}
+
+.input{
+	width: 80%;
+}
+#msg{
+	width: 70%;
+}
+
+#send{
+	width: 20%;
+}
+	
