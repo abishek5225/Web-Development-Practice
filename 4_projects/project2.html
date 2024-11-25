@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style>
+        .container{
+            color: white;
+            border-radius: 2px solid white;
+        }
+        
+    </style>
+</head>
+<body style="background-color: rgb(57, 57, 57); color: white;">
+
+        <div class="container">
+            <h1>BIM CALCULATOR</h1>
+            <form action="">
+                <p><label for="height">Height in CM:</label>
+                <input type="text" id="height">
+                </p>
+
+                <p><label for="weight">Weight in kg:</label >
+                <input type="text" id="weight">
+                </p >
+                <button>Calculate</button>
+                <div id="results" style="width :35px; color: black;">
+                   
+                </div>
+                
+            </form>
+        </div>
+
+</body>
+<script>
+    
+  const form=  document.querySelector('form')
+    form.addEventListener('submit', function(e){
+        e.preventDefault()
+
+        const height = parseInt(document.querySelector('#height').value)
+        const weight = parseInt(document.querySelector('#weight').value)
+        const results = document.querySelector('#results')
+
+        if(height === '' || height <=0 || isNaN(height)){
+        results.innerHTML= `please give a valid height ${height}`
+        }
+
+        else if(weight === '' || weight <=0 || isNaN(weight)){
+        results.innerHTML= `please give a valid weight ${weight}`
+        }
+        else{
+           const bmi = (weight / ((height*height)/10000)).toFixed(2)
+           if(bmi<18.6){
+            results.style.backgroundColor='orange'
+               results.innerHTML=`Your BMI is ${bmi} You are UNDERWEIGHT`    
+           }else if(bmi>=24.5){
+              results.style.backgroundColor='red'
+               results.innerHTML=`Your BMI is ${bmi} You are NORMAL`    
+           }else if (bmi >18.6 &&  bmi<=24.9){
+               results.style.backgroundColor='yellow'
+               results.innerHTML=`Your BMI is ${bmi} You are OBESE`
+           }
+           results.innerHTML = `<span>${bmi}</span>`
+        }
+        
+    })
+   
+</script>
+</html>

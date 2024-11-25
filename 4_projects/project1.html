@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            display: block;
+            height: 50px;
+            width: 80px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Switcher</h1>
+    <span class="button" id="grey"></span>
+    <span class="button" id="white"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id ="yellow"></span>
+</body>
+<script>
+    const buttons = document.querySelectorAll('.button')
+    const body = document.querySelector("body")
+
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(event){
+            if(event.target.id== 'grey'){
+                body.style.backgroundColor= 'grey'
+                
+            }
+            if(event.target.id== 'white'){
+                body.style.backgroundColor= 'white'
+            }
+            if(event.target.id== 'blue'){
+                body.style.backgroundColor= 'blue'
+            }
+            if(event.target.id== 'yellow'){
+                body.style.backgroundColor= 'yellow'
+            }
+        })
+    })
+    const grey =document.getElementById('grey')
+    grey.style.backgroundColor = 'grey'
+
+    const white =document.getElementById('white')
+    white.style.backgroundColor = 'white'
+
+    const blue =document.getElementById('blue')
+    blue.style.backgroundColor = 'blue'
+
+    const yellow =document.getElementById('yellow')
+    yellow.style.backgroundColor = 'yellow'
+</script>
+</html>
