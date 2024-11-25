@@ -1,0 +1,144 @@
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(115, 203, 224);
+  height: 70px;
+  border: solid 3px rgb(180, 221, 226);
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 13px;
+  display: inline;
+
+}
+#navbar ul li a {
+  padding: 10px 9px ;
+}
+#aboutnavbar ul li a {
+  padding: 10px 9px ;
+  font-size: 13px;
+}
+#portfolionavbar ul li a {
+  padding: 10px 9px ;
+  font-size: 13px;
+}
+#servicess ul li a {
+  padding: 10px 9px ;
+  font-size: 13px;
+}
+#contactnavbar ul li a {
+  padding: 10px 9px ;
+  font-size: 13px;
+}
+
+#circle1{
+  height: 850px;
+}
+#circle{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:  0px;
+  
+}
+.sd{
+  height: 300px;
+  width: 300px;
+  margin-bottom: 450px;
+  justify-content: center;
+  background-color: brown;
+  position: sticky;
+}
+
+article img{
+  height: 450px;
+  width: 350px;
+}
+blockquote{
+  font-size: 15px;
+  margin-top: 10px;
+}
+/*portfolio image*/
+#gallery img{
+  margin-right: 100px;
+  width: 300px;
+}
+#pp{
+  color: white;
+}
+form{
+  background: rgb(24, 19, 41);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 300px;
+  max-width: 440px;
+  border-radius: 10px;
+  height: 400px;
+  margin: 90px 0px 10px;
+  border: 4px solid black;
+}
+
+form input, form textarea{
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  width: 250px;
+  height: 5px;
+  border: 4px solid rgb(12, 38, 86);
+}
+
+form button{
+  padding: 5px;
+  background: #f0e8e9;
+  color: rgb(12, 11, 11);
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  border: 3px solid rgb(34, 65, 79);
+  font-weight: 700;
+}
+
+.containers .servicebox .icon{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: var(--i);
+  position: relative;
+}
+
+.containers .servicebox .content{
+  transform: scale(1);
+}
+.containers{
+  margin: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.icon{
+  position: relative;
+  text-align: center;
+  margin-left: 110px ;
+  margin-top: 20px;
+}
+.icon ion-icon{
+  width: 50px;
+}
+.servicebox{
+  border: 4px solid rgb(19, 38, 73);
+}
