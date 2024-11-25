@@ -1,0 +1,65 @@
+@media screen and (max-width:1100px){
+  
+}
+.sd{
+    height: 400px;
+    width: 400px;
+    margin-bottom: px;
+    justify-content: center;
+    background-color: brown;
+    position: relative;
+    margin-bottom: 400px;
+  }
+
+#circle1{
+  height: 1100px;
+}
+#circle{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px 200px 200px;
+  
+}
+
+.containers .servicebox .content{
+  transform: scale(1);
+}
+.icon ion-icon{
+  width: 50px;
+}
+.icon{
+  position: relative;
+  text-align: center;
+  margin-left: 110px ;
+  margin-top: 20px;
+}
+.containers{
+  margin: 30px ;
+  gap: 20px;
+  width: 300px;
+  position: relative;
+}
+.containers .servicebox .icon{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: var(--i);
+  position: relative;
+}
+#servicess li{
+ margin-top: 0px;
+
+}
+#serveicesss{
+  padding: 25px;
+}
+#containerr{
+ height: 95vh;
+}
+
