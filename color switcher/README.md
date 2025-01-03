@@ -1,1 +1,1 @@
- Color Switcher web app built with HTML, CSS, and JavaScript.
+ Color Switcher web app built with HTML, CSS, and JavaScript
